@@ -16,3 +16,12 @@ Frog.prototype.draw = function() {
 Frog.prototype.moveUp = function(){
   this.y -= 120;
 }
+Frog.prototype.moveDown = function(){
+  this.y += 120;
+}
+Frog.prototype.moveRight = function(){
+  this.x += 120;
+}
+Frog.prototype.moveLeft = function(){
+  this.x += 120;
+}
