@@ -4,7 +4,7 @@ function Frog(ctx) {
   this.img = new Image();
   this.img.src = "images/frogger-half.png";
 
-  this.scale = 0.4;
+  this.scale = 1;
 
   this.x = 450;
   this.y = 490;
@@ -23,5 +23,5 @@ Frog.prototype.moveRight = function(){
   this.x += 120;
 }
 Frog.prototype.moveLeft = function(){
-  this.x += 120;
+  this.x -= 120;
 }

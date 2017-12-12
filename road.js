@@ -2,6 +2,7 @@ function Road(ctx) {
   this.ctx = ctx;
 }
 
+
 Road.prototype.bgBlack = function(x, y, width, height) {
   this.ctx.beginPath();
   this.ctx.fillStyle = "black";
@@ -27,7 +28,7 @@ Road.prototype.grass = function(x, y, width, height){
 
 Road.prototype.draw = function(){
   var space = 20;
-  var height = 40;
+  var height = -5;
   this.bgBlack(0,0,1000,500);
   for(var i = 0, j = 0; i <= 8; i++){
     //this.highway1(space, 10, 90, 10);
@@ -36,14 +37,10 @@ Road.prototype.draw = function(){
     if(i === 8 && j < 3) {
       i = 0;
       space = 20;
-      height += 160;
+      height += 120;
       j ++;
     }
-    // if(i % 7) {
-    //   space = 0;
-    //   height += 90;
-    // }
 }
-  this.grass(0,500,1000,100);
+  this.grass(0,470,1000,170);
 
 }
